@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pixel mitosis</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Pick a word and draw randomized pictures based on a public photographs database." />
+    <meta property="“og:title“" content="Pixel mitosis">
+    <meta property="“og:site_name“" content="Pixel mitosis">
+    <meta property="“og:type“" content="“website“">
+    <meta name="twitter:title" content="Pixel mitosis">
+    <meta name="twitter:description"
+        content="Pick a word and draw randomized pictures based on a public photographs database.">
+    <script defer="defer" src="script.js"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="loading">
+        <div class="loading-text flicker-loader-fast">loading</div>
+        <div class="warning">
+            <p>Warning: may potentially trigger seizures for people with photosensitive epilepsy.</p>
+        </div>
+    </div>
+    <div id="alt-description"></div>
+    <div id="credit">photo by <a id="creator" target="blank">...</a> on <a
+            href="https://unsplash.com/?utm_source=pixel_mitosis&utm_medium=referral" target="blank">Unsplash</a></div>
+    <form action="/search" id="searchForm"><input name="query" placeholder="Search..." id="searchTerm"
+            autocomplete="off"></form><canvas></canvas>
+    <div id="flash"></div>
+</body>
+
+</html>
